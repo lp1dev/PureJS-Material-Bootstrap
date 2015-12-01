@@ -1,5 +1,5 @@
 var isDrawerOpened = false;
-var mainContainer, contentDisplay, navigationDrawer, filter;
+var mainContainer, navigationDrawer, filter;
 document.addEventListener("DOMContentLoaded", function(event) {
     mainContainer = document.getElementById("mainContainer");
     navigationDrawer = document.getElementById("drawer");

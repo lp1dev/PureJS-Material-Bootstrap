@@ -76,7 +76,8 @@ body{
 }
 
 #logo{
-	margin-left:15px;
+    margin-left:15px;
+    margin-right:10px;
 }
 
 #logo:active{
