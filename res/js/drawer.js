@@ -1,28 +1,28 @@
-var isDrawerOpened = true;
+var isDrawerOpened = false;
+var mainContainer, contentDisplay, navigationDrawer, filter;
+document.addEventListener("DOMContentLoaded", function(event) {
+    mainContainer = document.getElementById("mainContainer");
+    navigationDrawer = document.getElementById("drawer");
+    filter = document.getElementById("filter");
+    mainContainer.style.marginLeft = 0;
+});
 
 function drawer(){
-	if (isDrawerOpened == true)
-		closeDrawer();
-	else
-		openDrawer();
-	isDrawerOpened = !isDrawerOpened;
+    if (isDrawerOpened)
+	closeDrawer();
+    else
+	openDrawer();
+    isDrawerOpened = !isDrawerOpened;
 }
 
 function openDrawer(){
-	var navigationDrawer = document.getElementById("drawer");
-	var mainContainer = document.getElementById("mainContainer");
-	var contentDisplay = document.getElementById("contentDisplay");
-	mainContainer.style.marginLeft = navigationDrawer.style.width;
-	contentDisplay.style.marginLeft = navigationDrawer.style.width;
-	navigationDrawer.className = "drawer shadowed";
+    mainContainer.style.marginLeft = navigationDrawer.style.width;
+    navigationDrawer.className = "drawer shadowed";
+    filter.style.opacity = 0.5;
 }
 
 function closeDrawer(){
-	var navigationDrawer = document.getElementById("drawer");
-	var mainContainer = document.getElementById("mainContainer");
-	var contentDisplay = document.getElementById("contentDisplay");
-	contentDisplay.style.marginLeft = 0;
-	mainContainer.style.marginLeft = 0;
-	navigationDrawer.className = "drawer shadowed closed";
+    mainContainer.style.marginLeft = 0;
+    navigationDrawer.className = "drawer shadowed closed";
+    filter.style.opacity = 0;
 }
-
