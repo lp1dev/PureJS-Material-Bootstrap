@@ -15,25 +15,30 @@
   </head>
   <body>
     <!--Header-->
-    <div class="header shadowed">
-      <span onclick="drawer()" id="hamburger">&#9776</span>
-      <span id="logo">Pure<b>JS</b> <b>Boot</b>Strap</span>
-      <span id="page_title"></span>
+    <div class="header shadowed" id="header">
+      <div id="headerContent">
+	<span onclick="drawer()" id="hamburger">&#9776</span>
+	<span id="logo">Pure<b>JS</b> <b>Boot</b>Strap</span>
+	<span id="page_title"></span>
+      </div>
     </div>
     <!--Header End-->
     <!--Wrapper-->
     <div class="wrapper" >
       <ul class="drawer shadowed closed" id="drawer" ondrag="drawer()">
 	<li class="drawerHeader">
-	  <i class="fa fa-times" onclick="drawer()"></i> 
 	</li>
 	<li class="drawerRow">
 	  <i class="fa fa-rss drawerIcon"></i>
 	  <a href="#">Element 1</a>
 	</li>
+	<li class="drawerRow">
+	  <i class="fa fa-rss drawerIcon"></i>
+	  <a href="#">Element 2</a>
+	</li>
 	<div class="circle">&nbsp;</div>
       </ul>
-      <div id="filter"></div>
+      <div id="filter" onclick="drawer()"></div>
       <!--Main Container-->
       <div class="mainContainer" id="mainContainer">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
