@@ -64,6 +64,8 @@ a:link, a:visited{
     color: white;
     line-height:250px;
     text-align:center;
+    background:url('../img/avatar2016.png');
+    background-size: 100%;
 }
 
 .drawerHeader .fa{
@@ -141,4 +143,17 @@ h4{
     font-size:22px;
     text-decoration:none;
     font-weight:normal;
+}
+
+.material_list{
+    padding:0px;
+    margin:0px;
+}
+
+.material_list_item{
+    padding:10px;
+    text-decoration: none;
+    list-style-image: none;
+    list-style-type: none;
+    border-bottom: solid 1px #E9E9E9;
 }
